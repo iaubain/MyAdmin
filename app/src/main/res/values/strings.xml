@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">My Admin</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email(UserName)</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="tvlabel">Fill Your Credentials</string>
+    <string name="title_activity_admin_home">Admin</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="payfuelAdmin">Payfuel Admin</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="tankStyle">mTank</string>
+
+    <!-- form labels -->
+    <string name="tank">Tank: </string>
+    <string name="dipping">Dipping Value: </string>
+    <string name="pretank">PreTank Value: </string>
+    <string name="posttank">PostTank Value: </string>
+    <string name="theoritical">Theoretical Value: </string>
+    <string name="delivered">Delivered By: </string>
+    <string name="numberplate">Number Plate: </string>
+    <string name="water">Water Value: </string>
+    <string name="submit">SUBMIT</string>
+    <string name="close">Close</string>
+    <string name="boxTitle">Title</string>
+    <string name="confirmContent">Confirm Box Content</string>
+    <string name="cancel">CANCEL</string>
+    <string name="invalidData">Invalid Data</string>
+    <string name="tankingBoxTitle">Confirm Tanking…</string>
+    <string name="dippingBoxTitle">Confirm Dipping…</string>
+    <string name="ln">\n</string>
+</resources>
