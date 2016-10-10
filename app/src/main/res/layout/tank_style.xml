@@ -2,9 +2,10 @@
     <TextView
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/viewHeight"
+        android:minHeight="@dimen/viewHeight"
         android:gravity="start|center_vertical"
-        android:padding="@dimen/smallTextViewPadding"
+        android:padding="@dimen/mediumPadding"
         android:id="@+id/tankId"
         android:drawableStart="@drawable/tank_icon"
         android:drawablePadding="@dimen/smallTextViewDrawablePadding"

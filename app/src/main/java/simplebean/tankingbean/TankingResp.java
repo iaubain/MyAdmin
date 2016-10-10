@@ -7,14 +7,14 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  */
 public class TankingResp {
     @JsonProperty("Tanking")
-    private TankingBean tankingBean;
+    private TankingRespBean tankingRespBean;
     @JsonProperty("message")
     private String message;
     @JsonProperty("statusCode")
     private int statusCode;
 
-    public TankingResp(TankingBean tankingBean, String message, int statusCode) {
-        this.setTankingBean(tankingBean);
+    public TankingResp(TankingRespBean tankingRespBean, String message, int statusCode) {
+        this.setTankingRespBean(tankingRespBean);
         this.setMessage(message);
         this.setStatusCode(statusCode);
     }
@@ -23,12 +23,12 @@ public class TankingResp {
 
     }
 
-    public TankingBean getTankingBean() {
-        return tankingBean;
+    public TankingRespBean getTankingRespBean() {
+        return tankingRespBean;
     }
 
-    public void setTankingBean(TankingBean tankingBean) {
-        this.tankingBean = tankingBean;
+    public void setTankingRespBean(TankingRespBean tankingRespBean) {
+        this.tankingRespBean = tankingRespBean;
     }
 
     public String getMessage() {

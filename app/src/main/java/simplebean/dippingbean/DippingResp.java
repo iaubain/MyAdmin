@@ -6,16 +6,16 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  * Created by Hp on 9/26/2016.
  */
 public class DippingResp {
-    @JsonProperty("Dipping")
+    @JsonProperty("Diping")
     private
-    DippingBean dippingBean;
+    DippingRespBean dippingRespBean;
     @JsonProperty("message")
     private String message;
     @JsonProperty("statusCode")
     private int statusCode;
 
-    public DippingResp(DippingBean dippingBean, String message, int statusCode) {
-        this.setDippingBean(dippingBean);
+    public DippingResp(DippingRespBean dippingRespBean, String message, int statusCode) {
+        this.setDippingRespBean(dippingRespBean);
         this.setMessage(message);
         this.setStatusCode(statusCode);
     }
@@ -24,12 +24,12 @@ public class DippingResp {
 
     }
 
-    public DippingBean getDippingBean() {
-        return dippingBean;
+    public DippingRespBean getDippingRespBean() {
+        return dippingRespBean;
     }
 
-    public void setDippingBean(DippingBean dippingBean) {
-        this.dippingBean = dippingBean;
+    public void setDippingRespBean(DippingRespBean dippingRespBean) {
+        this.dippingRespBean = dippingRespBean;
     }
 
     public String getMessage() {

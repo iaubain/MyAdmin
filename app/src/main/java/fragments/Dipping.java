@@ -213,6 +213,7 @@ public class Dipping extends Fragment {
                     //HTTP status code
                     int statusCode = response.code();
                     try{
+                        Log.d("Server Result", new ClientData().mapping(response.body()));
                         final DippingResp dippingResp = response.body();
 
                         if(dippingResp.getStatusCode() == 100){

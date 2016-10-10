@@ -20,22 +20,22 @@
             android:orientation="horizontal">
             <TextView
                 android:text="@string/tank"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textSize="@dimen/normalText"
                 android:layout_gravity="center_vertical"
                 android:padding="@dimen/smallPadding"
-                android:layout_margin="@dimen/smallMargin"
-                android:layout_weight="1" />
-
-            <Spinner
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:padding="8dip"
-                android:layout_margin="@dimen/smallMargin"
-                android:id="@+id/mTankView"
-                android:layout_weight="2" />
+                android:layout_margin="@dimen/smallMargin" />
 
         </LinearLayout>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="8dip"
+            android:layout_margin="@dimen/smallMargin"
+            android:id="@+id/mTankView"
+            android:layout_weight="2" />
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -63,126 +63,142 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <TextView
-                android:text="@string/posttank"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:padding="@dimen/smallPadding"
-                android:layout_margin="@dimen/smallMargin"
-                android:layout_weight="1" />
-
+            <!--<TextView-->
+                <!--android:text="@string/posttank"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:padding="@dimen/smallPadding"-->
+                <!--android:layout_margin="@dimen/smallMargin"-->
+                <!--android:layout_weight="1" />-->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <EditText
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="8dip"
+                android:hint="@string/posttank"
                 android:layout_margin="@dimen/smallMargin"
                 android:id="@+id/postTank"
-                android:layout_weight="2"
                 android:maxLines="1"
                 android:maxLength="7"
                 android:inputType="number|numberDecimal" />
+            </android.support.design.widget.TextInputLayout>
 
         </LinearLayout>
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <TextView
-                android:text="@string/theoritical"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:padding="@dimen/smallPadding"
-                android:layout_margin="@dimen/smallMargin"
-                android:layout_weight="1" />
-
+            <!--<TextView-->
+                <!--android:text="@string/theoritical"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:padding="@dimen/smallPadding"-->
+                <!--android:layout_margin="@dimen/smallMargin"-->
+                <!--android:layout_weight="1" />-->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <EditText
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="8dip"
+                android:hint="@string/theoritical"
                 android:layout_margin="@dimen/smallMargin"
                 android:id="@+id/theoretical"
-                android:layout_weight="2"
                 android:maxLines="1"
                 android:maxLength="7"
                 android:inputType="number|numberDecimal" />
+            </android.support.design.widget.TextInputLayout>
 
         </LinearLayout>
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <TextView
-                android:text="@string/delivered"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:padding="@dimen/smallPadding"
-                android:layout_margin="@dimen/smallMargin"
-                android:layout_weight="1" />
+            <!--<TextView-->
+                <!--android:text="@string/delivered"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:padding="@dimen/smallPadding"-->
+                <!--android:layout_margin="@dimen/smallMargin"-->
+                <!--android:layout_weight="1" />-->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
             <EditText
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="8dip"
+                android:hint="@string/delivered"
                 android:layout_margin="@dimen/smallMargin"
                 android:id="@+id/delivered"
-                android:layout_weight="2"
                 android:maxLines="1"
                 android:maxLength="7"
                 android:inputType="number|numberDecimal" />
+            </android.support.design.widget.TextInputLayout>
 
         </LinearLayout>
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <TextView
-                android:text="@string/water"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:padding="@dimen/smallPadding"
-                android:layout_margin="@dimen/smallMargin"
-                android:layout_weight="1" />
-
+            <!--<TextView-->
+                <!--android:text="@string/water"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:padding="@dimen/smallPadding"-->
+                <!--android:layout_margin="@dimen/smallMargin"-->
+                <!--android:layout_weight="1" />-->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <EditText
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="8dip"
+                android:hint="@string/water"
                 android:layout_margin="@dimen/smallMargin"
                 android:id="@+id/waterValue"
-                android:layout_weight="2"
                 android:maxLines="1"
                 android:maxLength="7"
                 android:inputType="number|numberDecimal" />
+            </android.support.design.widget.TextInputLayout>
 
         </LinearLayout>
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <TextView
-                android:text="@string/numberplate"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:padding="@dimen/smallPadding"
-                android:layout_margin="@dimen/smallMargin"
-                android:layout_weight="1" />
-
+            <!--<TextView-->
+                <!--android:text="@string/numberplate"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:padding="@dimen/smallPadding"-->
+                <!--android:layout_margin="@dimen/smallMargin"-->
+                <!--android:layout_weight="1" />-->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <EditText
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="8dip"
+                android:hint="@string/numberplate"
                 android:layout_margin="@dimen/smallMargin"
                 android:id="@+id/numberPlate"
-                android:layout_weight="2"
                 android:maxLines="1"
                 android:maxLength="7"
                 android:textAllCaps="true"
                 android:inputType="number|numberDecimal" />
+            </android.support.design.widget.TextInputLayout>
 
         </LinearLayout>
         <Button
